@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+body {
+  background-color: #1f1f1f;
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.pupil {
+  position: relative;
+}
+h3 {
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+h1 {
+  font-weight: 500;
+  font-size: 6vw;
+  margin-bottom: 3%;
+  letter-spacing: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.wrapper {
+  background: transparent;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.contact-info h2 {
+  font-weight: 400;
+  font-size: 1.4vw;
+  margin-bottom: 16px;
+}
+.contact-info a {
+  display: block;
+  font-size: 1vw;
+  margin-bottom: 5%;
+  font-weight: 300;
+}
+.contact-info a:hover {
+  color: #00ea0b;
+}
+#coordinates {
+  text-align: center;
+  color: white;
+  width: 200px;
+  padding: 10px 30px;
+  background-color: red;
+}
+.svg {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+svg {
+  width: 25vw;
+}
+
+@media only screen and (max-width: 1280px) {
+  h3 {
+    font-size: 2vw;
+    font-weight: 300;
+  }
+  h1 {
+    line-height: 30px;
+  }
+  .contact-info a {
+    font-size: 1.8vw;
+  }
+  .contact-info h2 {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  h3 {
+    font-size: 1.9vw;
+    font-weight: 300;
+  }
+  h1 {
+    font-size: 6vw;
+
+    letter-spacing: 8px;
+  }
+  .contact-info a {
+    font-size: 2vw;
+  }
+  .contact-info h2 {
+    font-size: 2.2vw;
+  }
+  svg {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 2.4vw;
+    font-weight: 300;
+  }
+  .contact-info a {
+    font-size: 2.5vw;
+  }
+  .contact-info h2 {
+    font-size: 2.7vw;
+  }
+  svg {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h3 {
+    font-size: 3.3vw;
+    font-weight: 300;
+  }
+  h1 {
+    margin: 0 10px;
+    margin-bottom: 30px;
+  }
+  .contact-info a {
+    font-size: 4vw;
+  }
+  .contact-info h2 {
+    font-size: 4.4vw;
+  }
+  svg {
+    width: 75vw;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h3 {
+    font-size: 3.5vw;
+    font-weight: 300;
+  }
+  h1 {
+    font-size: 6vw;
+
+    letter-spacing: 8px;
+  }
+  .contact-info a {
+    font-size: 5vw;
+  }
+  .contact-info h2 {
+    font-size: 5.4vw;
+  }
+}
