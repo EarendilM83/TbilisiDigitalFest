@@ -86,9 +86,9 @@ svg {
     font-weight: 300;
   }
   h1 {
-    font-size: 6vw;
+    font-size: 4vw;
 
-    letter-spacing: 8px;
+    letter-spacing: 5px;
   }
   svg {
     width: 50vw;
@@ -96,6 +96,9 @@ svg {
 }
 
 @media only screen and (max-width: 768px) {
+  h1{
+    letter-spacing: 3px;
+  }
   h3 {
     font-size: 2.4vw;
     font-weight: 300;
@@ -112,6 +115,7 @@ svg {
   h1 {
     margin: 0 10px;
     margin-bottom: 30px;
+    letter-spacing: 3px;
   }
   svg {
     width: 75vw;
@@ -125,7 +129,7 @@ svg {
   h1 {
     font-size: 6vw;
 
-    letter-spacing: 8px;
+    letter-spacing: 3px;
   }
  
 }
@@ -155,5 +159,7 @@ svg {
 }
 
 
-
-
+#cover{
+  transform: translate(0, 300px);
+  fill: #000;
+}

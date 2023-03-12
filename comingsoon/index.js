@@ -22,11 +22,12 @@ eye.addEventListener("mousemove", function (event) {
 });
 
 
-// const overlay = document.getElementById('overlay');
 
 
-
+const cover = document.getElementById('cover');
 const myElement = document.getElementById("overlay");
+
+
 function blink(){
   console.log("im working" + myElement)
   
@@ -39,20 +40,12 @@ function blink(){
 
 }
 
+function removeCover(){
+  cover.style.transform = "translate(0,0)"
+}
+
+
+
 document.addEventListener('click', blink)
+document.addEventListener('click', removeCover)
 
-// function addOverlayOnClick(element) {
-//   element.addEventListener("onClick", function() {
-//     element.classList.add("overlay");
-//     console.log("down")
-//   });
-
-//   element.addEventListener("mouseup", function() {
-//     element.classList.remove("overlay");
-//     console.log("up")
-
-//   });
-// }
-
-
-// addOverlayOnClick(myElement);
