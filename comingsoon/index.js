@@ -13,10 +13,46 @@ eye.addEventListener("mousemove", function (event) {
   const deltaY = mouseY - eyeCenterY;
 
   const angle = Math.atan2(deltaY, deltaX);
-  const radius = Math.min(eyeRect.width, eyeRect.height) / 16;
+  const radius = Math.min(eyeRect.width, eyeRect.height) / 8;
 
   const pupilX = radius * Math.cos(angle);
   const pupilY = radius * Math.sin(angle);
 
   pupil.setAttribute("transform", `translate(${pupilX}, ${pupilY})`);
 });
+
+
+// const overlay = document.getElementById('overlay');
+
+
+
+const myElement = document.getElementById("overlay");
+function blink(){
+  console.log("im working" + myElement)
+  
+  myElement.classList.add('overlay')
+  function removeClass(){
+    myElement.classList.remove('overlay')
+  }
+  setTimeout(removeClass, 200)
+  
+
+}
+
+document.addEventListener('click', blink)
+
+// function addOverlayOnClick(element) {
+//   element.addEventListener("onClick", function() {
+//     element.classList.add("overlay");
+//     console.log("down")
+//   });
+
+//   element.addEventListener("mouseup", function() {
+//     element.classList.remove("overlay");
+//     console.log("up")
+
+//   });
+// }
+
+
+// addOverlayOnClick(myElement);
